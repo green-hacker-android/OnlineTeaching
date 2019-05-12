@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_all_courses"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="All Courses" />
+        <item
+            android:id="@+id/nav_my_courses"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="My Courses"
+            android:visible="false" />
+
+    </group>
+
+    <group
+        android:id="@+id/features"
+        android:checkableBehavior="single"
+        android:menuCategory="system">
+        <item
+            android:id="@+id/nav_preferences"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/title_activity_settings" />
+
+        <item
+            android:id="@+id/nav_contactUs"
+            android:icon="@drawable/ic_contact_mail_black_24dp"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_whatsapp"
+            android:icon="@drawable/whatsapp_icon_color"
+            android:title="Chat on Whatsapp" />
+
+    </group>
+</menu>
